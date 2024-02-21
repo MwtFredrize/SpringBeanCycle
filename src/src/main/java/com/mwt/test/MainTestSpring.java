@@ -13,7 +13,7 @@ import com.mwt.test.service.DemoService;
 public class MainTestSpring {
     public static void main(String[] args) {
         DyanmicConfigApplicationContext context = new DyanmicConfigApplicationContext(AppConfig.class);
-        DemoService service = (DemoService) context.getBean("DemoService");
-
+        DemoService service = (DemoService) context.getBean("demoService");
+        service.method();
     }
 }
